@@ -3,6 +3,8 @@
 <div class="jumbotron">
   <h1>Welcome to Eddie Brophy's Personal Website</h1>
   <p>Here you can contact Eddie Brophy</p>
+  {% load staticfiles %}
+  <img src="{% static "image/Headshot.jpg" %}" class="img-thumbnail" alt="Eddie" width="350" height="350"/>
   <p><a href="{% url 'contact_create' %}" class="btn btn-lg btn-primary">Submit Contact Message</a></p>
 </div>
 {% endblock %}
