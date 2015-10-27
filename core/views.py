@@ -15,3 +15,8 @@ class ContactCreateView(CreateView):
 
 class Success(TemplateView):
   template_name = "success.html"
+
+class AboutCreateView(CreateView):
+  model = About
+  template_name = "about/about_form.html"
+  fields = ['title']
